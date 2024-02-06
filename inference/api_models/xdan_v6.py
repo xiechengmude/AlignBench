@@ -6,6 +6,7 @@ class xdan_v6(api_model):
     def __init__(self, workers=10):
         self.workers = workers
         self.model_name = "xDAN-L2-Chat-RL-v6.1-v2-0203-e2" # TODO
+        self.openai_api_base = "http://129.146.253.6:8002/v1" # TODO
         self.temperature = 0.7
         self.system_prompt = """You are a helpful assistant named xDAN and to be an expert in worldly knowledge, skilled in employing a probing questioning strategy, 
 carefully considering each step before providing answers.Take a deep breath and find out the principles behind this questions.
